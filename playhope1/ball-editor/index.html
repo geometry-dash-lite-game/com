@@ -50,11 +50,11 @@
 <script>
         const hideFullScreenButton = "";
         const buildUrl = "Build";
-        const loaderUrl = buildUrl + "/att1 (5).loader.js";
+        const loaderUrl = buildUrl + "/att1 (37).loader.js";
         const config = {
-            dataUrl: buildUrl + "/att1 (5).data.unityweb",
-            frameworkUrl: buildUrl + "/att1 (5).framework.js.unityweb",
-            codeUrl: buildUrl + "/att1 (5).wasm.unityweb",
+            dataUrl: buildUrl + "/att1 (37).data.unityweb",
+            frameworkUrl: buildUrl + "/att1 (37).framework.js.unityweb",
+            codeUrl: buildUrl + "/att1 (37).wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
             companyName: "DefaultCompany",
             productName: "WaveRedactor",
@@ -205,9 +205,11 @@ onResize();
                 StartUnityInstance();
         }
 
-        function LocalHost() { return true;
+        function LocalHost() {
+  return true;
         }
 
+        // InitYSDK();
         async function InitYSDK() {
             try {
                 if (LocalHost()) return;
